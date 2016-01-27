@@ -1,0 +1,57 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      a.navbar-brand(href="/")
+        img#logo-img(src="/images/pages/base/logo.png")
+        span.glyphicon.glyphicon-home
+        
+    ul.nav.navbar-nav
+      li
+        a(href="/about") About
+      li
+        a(href="/teachers") Teachers
+      li
+        a(href="https://discourse.codecombat.com/") Forum
+      li
+        a#create-account-link Create Account
+      li
+        a#login-link Login
+      
+    #language-dropdown-wrapper.pull-right
+      select.language-dropdown.form-control
+      
+.container
+  #classroom-in-box-row.row
+    .col-sm-6
+      h2.text-navy A classroom in-a-box for teaching computer science.
+    .col-sm-6
+      p CodeCombat is a platform for students to learn computer science while playing through a real game.
+      p Our courses have been specifically playtested to excel in a classroom setting, even by teachers with little to no prior programming experience.
+    
+  #feature-spread-row.row.text-center
+    h3 Designed with teachers in mind
+    .col-sm-4
+      div(style="background: red; width: 170px; height: 170px; display: inline-block").img-circle
+      h4
+        | Real, typed code
+        br
+        | from the first level
+      p Getting students to typed code as quickly as possible is critical to learning programming syntax and proper structure.
+      
+    .col-sm-4
+      div(style="background: yellow; width: 170px; height: 170px; display: inline-block").img-circle
+      h4 
+        | Educator resources
+        br
+        | and course guides
+      p Teaching computer science does not require a costly degree, because we provide tools to support educators of all backgrounds.
+      
+    .col-sm-4
+      div(style="background: blue; width: 170px; height: 170px; display: inline-block").img-circle
+      h4
+        | Accessible to
+        br
+        | everyone
+      p Democratizing the process of learning coding is at the core of our philosophy. Everyone should be able to learn to code.
+      
+      

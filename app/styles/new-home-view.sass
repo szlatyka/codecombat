@@ -1,0 +1,118 @@
+// TODO: Move flat style into probably several files and Bootstrap variables
+
+// Variables
+
+$headline-font: 'Arvo', serif
+$body-font: 'Open Sans', sans-serif
+
+$burgandy: #7D0101
+$gold: #F2BE19
+$navy: #0E4C60
+$forest: #20572B
+
+.style-flat
+  background: white
+  
+  // Fonts
+  h1, h2, h3, h4, h5, h6
+    // Unsetting game styles
+    font-variant: normal
+    color: black
+  
+  h1
+    font-family: $headline-font
+    font-weight: normal
+    font-size: 46px
+    line-height: 62px
+    
+  h2
+    font-family: $body-font
+    font-weight: lighter
+    font-size: 30px
+    line-height: 42px
+    
+  h3
+    font-family: $headline-font
+    font-weight: normal
+    font-size: 33px
+    line-height: 45px
+    
+  h4
+    font-family: $body-font
+    font-weight: lighter
+    font-size: 22px
+    line-height: 32px
+    
+  h5
+    font-family: $headline-font
+    font-weight: bold
+    font-size: 20px
+    line-height: 31px
+    
+  h6
+    font-family: $body-font
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    
+  p
+    margin: 0 0 14px
+
+  font-family: $body-font
+  font-size: 18px
+  line-height: 29px
+  
+  
+  // Navbar
+
+  .navbar
+    background: white
+
+    a.navbar-brand
+      #logo-img
+        width: 210px
+        height: 65px
+        margin-right: 10px
+
+      .glyphicon-home
+        position: relative
+        top: 4px
+
+      color: $burgandy
+      &:hover
+        color: white
+        background: $burgandy
+
+    .nav > li > a
+      // TODO: Move this to bootstrap variables for navbars
+      font-weight: bold
+      font-family: $body-font
+      font-size: 16px
+      padding: 38px 20px 37px
+      color: $burgandy
+
+      &:hover
+        background: $burgandy
+        color: white
+
+    #language-dropdown-wrapper
+      display: inline-block
+      padding: 30px 20px
+
+    .language-dropdown
+      width: 250px
+    
+  // Classes
+  
+  .text-navy
+    color: $navy
+
+
+#new-home-view
+  
+  #classroom-in-box-row
+    margin: 40px 0
+    
+  #feature-spread-row
+    .col-sm-4
+      padding: 40px
