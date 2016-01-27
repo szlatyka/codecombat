@@ -8,6 +8,7 @@ template = require 'templates/new-home-view'
   Todos:
   * Hook up login and create account buttons
   * Set up navbar to collapse
+  * Get rid of modal wrapper shadow at top of page
   
 ###
 
