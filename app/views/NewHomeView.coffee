@@ -31,6 +31,7 @@ module.exports = class NewHomeView extends RootView
 
   afterRender: ->
     @onChangeSchoolLevelDropdown()
+    super()
 
   onChangeSchoolLevelDropdown: (e) ->
     levels =
