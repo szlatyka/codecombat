@@ -54,7 +54,7 @@ nav.navbar.navbar-default
         | everyone
       p.small Democratizing the process of learning coding is at the core of our philosophy. Everyone should be able to learn to code.
   
-  .testimonials-rows.text-center
+  .testimonials-rows
     .testimonials-filler-left
     .testimonials-filler-right
     .row
@@ -62,13 +62,13 @@ nav.navbar.navbar-default
         blockquote
           h2 I think they actually forgot that they were actually learning something.
         
-      .col-lg-2.col-sm-3
+      .col-lg-2.col-sm-3.text-center
         img.img-circle(src="/images/pages/home/timmaki.png")
         h6 Tim Maki
         .small Director of Technology, Tilton School
       
     .row
-      .col-lg-2.col-sm-3.col-lg-offset-1
+      .col-lg-2.col-sm-3.col-lg-offset-1.text-center
         img.img-circle(src="/images/pages/home/dylan.png")
         h6 Dylan
         .small 3rd Grader
@@ -125,7 +125,7 @@ nav.navbar.navbar-default
       img(src="/images/pages/home/G3_game.png")
       #benefit-graphic-3-filler
         
-  #request-demo-row.text-center
+  .request-demo-row.text-center
     h1 Curious? Request a demo and we'll show you the ropes
     h2 Or create a class and see it for yourself!
     p
@@ -183,7 +183,7 @@ nav.navbar.navbar-default
         img(src="/images/pages/home/course_languages.png")
         | Courses are available in JavaScript, Python, and Java (coming soon!)
       
-  .testimonials-rows.text-center
+  .testimonials-rows
     .testimonials-filler-left
     .testimonials-filler-right
     .row
@@ -191,13 +191,13 @@ nav.navbar.navbar-default
         blockquote
           h2 Boasts riddles that are complex enough to fascinate gamers and coders alike.
 
-      .col-lg-2.col-sm-3
+      .col-lg-2.col-sm-3.text-center
         img.img-circle(src="/images/pages/home/opensource.png")
         h6 Open Source
         .small opensource.com
 
     .row
-      .col-lg-2.col-sm-3.col-lg-offset-1
+      .col-lg-2.col-sm-3.col-lg-offset-1.text-center
         img.img-circle(src="/images/pages/home/pcmag.png")
         h6 PC Mag
         .small pcmag.com
@@ -206,3 +206,77 @@ nav.navbar.navbar-default
         blockquote
           h2 A winning combination of RPG gameplay and programming homework that pulls off making kid-friendly education legitimately enjoyable.
           
+          
+  .request-demo-row.text-center
+    h1 Everything you need to run a computer science class in your school today, no CS background required.
+    p
+      a.btn.btn-primary.btn-lg(href="/teachers/quote") Request a Demo
+      a.btn.btn-primary-alt.btn-lg(href="/courses/teachers") Create a Class
+      
+      
+  .text-center
+    img(src="/images/pages/home/character_lineup.png")
+    
+    
+.container-fluid
+  #footer.small
+    .container
+      .row
+        .col-sm-3
+          ul.list-unstyled
+            li
+              strong CodeCombat
+            li
+              a(href="/about") About
+            li
+              a(href="/careers") Jobs
+            li
+              a(href="http://blog.codecombat.com/", data-i18n="nav.blog")
+            li
+              a(href="/legal") Legal
+            
+        .col-sm-3
+          ul.list-unstyled
+            li
+              strong Schools
+            li
+              a(href="/teachers") Teachers
+            li
+              a(href="https://sites.google.com/a/codecombat.com/teacher-guides/") Educator Wiki
+            li
+              a(href="/courses/quote") Request a Quote
+            
+        .col-sm-3
+          ul.list-unstyled
+            li
+              strong Get Involved
+            li
+              a(href='/community', data-i18n="nav.community")
+            li
+              a(href="/contribute") Contribute
+            li
+              a(href=view.forumLink(), data-i18n="nav.forum")
+            li
+              a(href="/play/ladder") Multiplayer
+            li
+              a(href="https://github.com/codecombat/codecombat") Open source (GitHub)
+        .col-sm-3
+          ul.list-unstyled
+            li
+              strong Support
+            li
+              a(href="https://discourse.codecombat.com/t/faq-check-before-posting/1027") FAQs
+            li
+              a(tabindex=-1, data-toggle="coco-modal", data-target="core/ContactModal", data-i18n="nav.contact")
+            li
+              a(href="https://www.facebook.com/codecombat", data-i18n="nav.facebook")
+            li
+              a(href="https://twitter.com/codecombat", data-i18n="nav.twitter")
+              
+  #final-footer.small.text-center
+    | Copyright ©2016 CodeCombat. All Rights Reserved.
+    img(src="/images/pages/base/logo.png" alt="CodeCombat")
+    span.spr Need help? Email
+    a(href="mailto:team@codecombat.com") team@codecombat.com
+    span.spl and we'll get in touch!
+      
