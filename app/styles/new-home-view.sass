@@ -165,20 +165,28 @@ $forest: #20572B
     img
       margin-bottom: 20px
       
-  #testimonials-rows
+  .testimonials-rows
     background: $navy
     color: white
     position: relative
     padding: 60px 0 40px
-    margin: 50px 0 100px
+    margin: 100px 0
     
     h2, h6
       color: white
       
-    #testimonials-filler
+    .testimonials-filler-left
       position: absolute
       width: 2000px
       left: -2000px
+      top: 0px
+      background: $navy
+      height: 100%
+      
+    .testimonials-filler-right
+      position: absolute
+      width: 2000px
+      right: -2000px
       top: 0px
       background: $navy
       height: 100%
@@ -261,6 +269,12 @@ $forest: #20572B
     display: inline-block
     width: 250px
 
+  #request-demo-row
+    margin: 100px 0
+
+    .btn
+      margin: 20px 10px
+      
   #courses-container
     display: flex
     flex-wrap: wrap
@@ -329,9 +343,9 @@ $forest: #20572B
         h6
           margin-top: 6px
           color: white
-
-  #request-demo-row
-    margin: 100px 0
-    
-    .btn
-      margin: 10px
+          
+    .text-center
+      width: 100%
+      margin-top: 30px
+      img
+        margin-right: 20px
