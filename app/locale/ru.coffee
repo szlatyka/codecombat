@@ -1256,9 +1256,9 @@ module.exports = nativeDescription: "русский", englishDescription: "Russi
     league: "Лига"
     red_ai: "CPU красного" # "Red AI Wins", at end of multiplayer match playback
     blue_ai: "CPU синего"
-    wins: "Победы" # At end of multiplayer match playback
-    humans: "Красный" # Ladder page display team name
-    ogres: "Синий"
+    wins: "Побеждает" # At end of multiplayer match playback
+    humans: "Красных" # Ladder page display team name
+    ogres: "Синих"
 
   user:
     stats: "Характеристики"
