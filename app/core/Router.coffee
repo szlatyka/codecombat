@@ -160,7 +160,6 @@ module.exports = class CocoRouter extends Backbone.Router
     ViewClass = @tryToLoadModule path
     if not ViewClass and application.moduleLoader.load(path)
       @listenToOnce application.moduleLoader, 'load-complete', ->
-        console.log 'path, args', path, args
         @routeDirectly(path, args, options)
       return
     return @openView @notFoundView() if not ViewClass
