@@ -109,7 +109,7 @@ $forest: #20572B
       font-weight: bold
       font-family: $body-font
       font-size: 16px
-      padding: 38px 20px 37px
+      padding: 38px 15px 37px
       color: $burgandy
       text-shadow: 0 0 0
 
@@ -152,6 +152,14 @@ $forest: #20572B
   
   .text-navy
     color: $navy
+    
+  .bg-navy
+    background-color: $navy
+    color: white
+    h1, h2, h3, h4, h5, h6, a
+      color: white
+    a.btn-primary-alt
+      color: $navy
 
 
 #new-home-view
@@ -160,6 +168,8 @@ $forest: #20572B
     background: $navy
     .container
       background-image: url("/images/pages/home/J1_characters.png")
+      &.alt-image
+        background-image: url("/images/pages/home/J2_girl.png")
       min-height: 536px
       background-repeat: no-repeat
       

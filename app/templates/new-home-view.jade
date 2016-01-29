@@ -1,5 +1,5 @@
 nav.navbar.navbar-default
-  .container
+  .container-fluid
     .navbar-header
       a.navbar-brand(href="/")
         img#logo-img(src="/images/pages/base/logo.png")
@@ -21,8 +21,7 @@ nav.navbar.navbar-default
       select.language-dropdown.form-control
 
 .container-fluid#jumbotron-container-fluid
-  .container
-    //img(src="/images/pages/home/J1_characters.png")
+  .container(class=view.jumbotron === 'student' ? 'alt-image' : '')
     .row
       .col-md-5.col-md-offset-2
         h3 The most engaging game for learning programming.
@@ -31,17 +30,18 @@ nav.navbar.navbar-default
         .well.text-center
           h6#classroom-edition-header Classroom Edition:
           div
-            button.btn.btn-primary.btn-lg.btn-block I'm a Teacher
+            a.btn.btn-primary.btn-lg.btn-block(href="#classroom-in-box-row") I'm a Teacher
           div
-            button.btn.btn-success.btn-lg.btn-block I'm a Student
+            a.btn.btn-success.btn-lg.btn-block(href="/courses") I'm a Student
           
           h6#learn-to-code-header Learn to code:
-          button.btn.btn-warning.btn-lg.btn-block Play Now
+          a#play-btn.btn.btn-warning.btn-lg.btn-block(href=view.playURL) Play Now
     .row#learn-more-row
       .col-xs-12.text-center
-        h6 Learn more
-        h2
-          span.glyphicon.glyphicon-chevron-down
+        a(href="#classroom-in-box-row")
+          h6 Learn more
+          h2
+            span.glyphicon.glyphicon-chevron-down
         
       
 .container

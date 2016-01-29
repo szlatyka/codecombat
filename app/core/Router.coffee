@@ -13,7 +13,24 @@ module.exports = class CocoRouter extends Backbone.Router
     @initializeSocialMediaServices = _.once @initializeSocialMediaServices
 
   routes:
-    '': go('HomeView')
+    '': ->
+      # Testing new home page
+      group = me.get('testGroupNumber') % 4
+      group = 0
+      switch group
+        when 0 
+          group = 'control'
+          @routeDirectly('HomeView', [])
+        when 1
+          group = 'home-with-note'
+          @routeDirectly('HomeView', [], { withTeacherNote: true })
+        when 2
+          group = 'new-home-student'
+          @routeDirectly('NewHomeView', [], { jumbotron: 'student' })
+        when 3
+          group = 'new-home-characters'
+          @routeDirectly('NewHomeView', [], { jumbotron: 'characters' })
+      application.tracker.identify newHomePageGroup: group unless me.isAdmin()
 
     'about': go('AboutView')
 
@@ -138,15 +155,17 @@ module.exports = class CocoRouter extends Backbone.Router
   removeTrailingSlash: (e) ->
     @navigate e, {trigger: true}
 
-  routeDirectly: (path, args) ->
+  routeDirectly: (path, args, options) ->
     path = "views/#{path}" if not _.string.startsWith(path, 'views/')
     ViewClass = @tryToLoadModule path
     if not ViewClass and application.moduleLoader.load(path)
       @listenToOnce application.moduleLoader, 'load-complete', ->
-        @routeDirectly(path, args)
+        console.log 'path, args', path, args
+        @routeDirectly(path, args, options)
       return
     return @openView @notFoundView() if not ViewClass
-    view = new ViewClass({}, args...)  # options, then any path fragment args
+    options ?= {}
+    view = new ViewClass(options, args...)  # options, then any path fragment args
     view.render()
     @openView(view)
 
