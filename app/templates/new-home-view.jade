@@ -1,5 +1,5 @@
 nav.navbar.navbar-default
-  .container-fluid
+  .container
     .navbar-header
       a.navbar-brand(href="/")
         img#logo-img(src="/images/pages/base/logo.png")
@@ -19,6 +19,30 @@ nav.navbar.navbar-default
       
     #language-dropdown-wrapper.pull-right
       select.language-dropdown.form-control
+
+.container-fluid#jumbotron-container-fluid
+  .container
+    //img(src="/images/pages/home/J1_characters.png")
+    .row
+      .col-md-5.col-md-offset-2
+        h3 The most engaging game for learning programming.
+        
+      .col-md-3.col-md-offset-1
+        .well.text-center
+          h6#classroom-edition-header Classroom Edition:
+          div
+            button.btn.btn-primary.btn-lg.btn-block I'm a Teacher
+          div
+            button.btn.btn-success.btn-lg.btn-block I'm a Student
+          
+          h6#learn-to-code-header Learn to code:
+          button.btn.btn-warning.btn-lg.btn-block Play Now
+    .row#learn-more-row
+      .col-xs-12.text-center
+        h6 Learn more
+        h2
+          span.glyphicon.glyphicon-chevron-down
+        
       
 .container
   #classroom-in-box-row.row
